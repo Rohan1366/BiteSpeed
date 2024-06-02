@@ -16,7 +16,7 @@ const StyledTextArea = styled(TextareaAutosize)(
   ({ theme }) => `
         width: 320px;
         height:200px
-        border-radius: 10px 12px 0px 10px;
+        border-radius: 12px 12px 0px 15px;
         border: 1px solid lightgrey;
         box-shadow: 0px 2px 2px lightgrey; 
         background-color: white;

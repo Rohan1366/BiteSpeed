@@ -48,13 +48,13 @@ function NavigationBar({ nodes, edges }) {
 
   const handleOnClick = () => {
     if (unConnectedNodes.length != 0) {
-      snackBarMsg = "Save failed: unconnected nodes or edges detected!";
+      snackBarMsg = "Cannot Save Flow";
       showError(snackBarMsg);
       return;
     }
 
     if (emptyTargetNodes.length != 1) {
-      snackBarMsg = "Save failed: unconnected nodes or edges detected!";
+      snackBarMsg = "Cannot Save Flow";
       showError(snackBarMsg);
       return;
     } else {

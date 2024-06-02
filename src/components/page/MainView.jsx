@@ -20,6 +20,16 @@ const bgstyle = {
   width: "60%",
 };
 
+
+const initialNodes = [
+  {
+    id: '1',
+    type: 'custom',
+    position: { x: 250, y: 5 },
+    data: { label: 'Customized Node' },
+  },
+];
+
 // Create node types
 const nodeTypes = { custom: Node };
 
@@ -29,7 +39,7 @@ const getId = () => `node_${id++}`;
 
 const MainView = () => {
   const reactFlowWrapper = useRef(null);
-  const [nodes, setNodes, onNodesChange] = useNodesState([]);
+  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [reactFlowInstance, setReactFlowInstance] = useState(0);
   const [selectedNodeId, setSelectedNodeId] = useState(null);

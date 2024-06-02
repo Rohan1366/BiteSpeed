@@ -40,8 +40,8 @@ function Node({ data, selected }) {
 
       <Card
         sx={{
-          minWidth: 280,
-          minHeight: 105,
+          minWidth: 420,
+          minHeight: 90,
           borderRadius: "10px",
           border: selected ? "1px solid steelblue" : "0px",
         }}
@@ -49,13 +49,13 @@ function Node({ data, selected }) {
       >
         <CardHeader
           avatar={
-            <Avatar sx={{ bgcolor: "white", height: 25, width: 25 }}>
-              <MessageRounded style={{ color: "black", fontSize: 18 }} />
+            <Avatar sx={{ bgcolor: "#ADD8E6", height: 25, width: 25 }}>
+              <MessageRounded style={{ color: "black", fontSize: 25 }} />
             </Avatar>
           }
           action={
-            <IconButton sx={{ bgcolor: "#25D366", height: 54, width: 54 }}>
-              <WhatsApp style={{ color: "white", fontSize: 15 }} />
+            <IconButton sx={{ bgcolor: "white", height: 50, width: 50 }}>
+              <WhatsApp style={{ color: "#25D366", fontSize: 25 }} />
             </IconButton>
           }
           title="Send Message"
@@ -65,7 +65,7 @@ function Node({ data, selected }) {
             fontSize: "18px",
             fontFamily: "sans-serif",
           }}
-          sx={{ bgcolor: "#25D366", height: 45 }}
+          sx={{ bgcolor: "#ADD8E6", height: 45 }}
         />
         <Divider />
 
