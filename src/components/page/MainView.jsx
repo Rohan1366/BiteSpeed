@@ -26,7 +26,7 @@ const initialNodes = [
     id: '1',
     type: 'custom',
     position: { x: 250, y: 5 },
-    data: { label: 'Customized Node' },
+    data: { label: 'Text Massage' },
   },
 ];
 
